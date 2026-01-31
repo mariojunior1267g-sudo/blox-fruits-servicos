@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- SEO Básico -->
+<title>Blox Fruits Store • Profissional</title>
+<meta name="description" content="Venda de frutas míticas e lendárias do Blox Fruits com atendimento via WhatsApp, serviços e suporte premium.">
+<meta name="keywords" content="Blox Fruits, Frutas, Venda, WhatsApp, Serviços, Up Level, Lendárias, Míticas">
+<link rel="canonical" href="https://seusite.com/">
+
+<!-- Open Graph (para compartilhamento) -->
+<meta property="og:title" content="Blox Fruits Store • Profissional">
+<meta property="og:description" content="Frutas míticas e lendárias no Blox Fruits com atendimento via WhatsApp e serviços premium.">
+<meta property="og:image" content="https://cdn.pixabay.com/photo/2023/06/10/20/12/fruit-8053755_1280.png">
+<meta property="og:url" content="https://seusite.com/">
+<meta property="og:type" content="website">
+
+<!-- Favicon -->
+<link rel="icon" href="https://cdn.pixabay.com/photo/2018/06/18/16/05/fruit-3487333_1280.png">
+
+<!-- Fonte premium -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<!-- Lottie -->
+<script src="https://unpkg.com/lottie-web/build/player/lottie.min.js"></script>
+
+<style>
+
+/* ---------- VARIÁVEIS DE TEMA ---------- */
+:root {
+  --bg-light: #ffffff;
+  --bg-dark: #0F0F12;
+  --text-light: #111;
+  --text-dark: #EEE;
+  --primary: #00e676;
+  --accent: #3f51b5;
+}
+
+/* ---------- RESET ---------- */
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;}
+html{scroll-behavior:smooth;}
+body{background:var(--bg-dark);color:var(--text-dark);transition:0.4s;}
+a{text-decoration:none;color:inherit;}
+
+/* ---------- NAVBAR ---------- */
+nav{
+  position:fixed;top:0;left:0;right:0;
+  background:rgba(0,0,0,0.85);
+  backdrop-filter:blur(9px);
+  padding:18px 24px;z-index:999;
+}
+nav .container{display:flex;justify-content:space-between;align-items:center;}
+nav .logo{font-size:1.9rem;font-weight:700;color:var(--primary);}
+nav .menu{display:flex;gap:20px;}
+nav .menu a{font-size:1rem;font-weight:500;transition:0.3s;color:var(--text-dark);}
+nav .menu a:hover{color:var(--primary);}
+nav .toggle-theme{cursor:pointer;font-size:1.2rem;margin-left:15px;}
+
+/* ---------- HERO + LOTTIE ---------- */
+.hero {
+  height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;
+  padding-top:80px;position:relative;
+}
+.hero h1 {
+  font-size:clamp(2.5rem,5vw,4rem);font-weight:700;color:var(--primary);
+}
+.hero p {
+  margin-top:12px;font-size:1.2rem;color:var(--text-dark);
+}
+.hero .btn-primary {
+  margin-top:30px;background:var(--primary);color:#000;
+  padding:15px 32px;font-size:1.1rem;font-weight:600;border-radius:8px;
+  transition:0.3s;
+}
+.hero .btn-primary:hover{transform:scale(1.05);filter:brightness(1.2);}
+
+/* ---------- CONTAINERS ---------- */
+.container{max-width:1160px;margin:0 auto;padding:0 18px;}
+.section{padding:80px 0;}
+.section-title {
+  font-size:2.4rem;text-align:center;color:var(--primary);
+  margin-bottom:45px;
+}
+
+/* ---------- GRID CARD ---------- */
+.grid-cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:22px;}
+
+.card{
+  background:rgba(255,255,255,0.06);
+  border-radius:14px;padding:22px;
+  transition:0.5s;border:1px solid rgba(255,255,255,0.15);
+  backdrop-filter:blur(6px);
+}
+.card:hover{
+  transform:translateY(-7px) scale(1.03);
+  box-shadow:0px 15px 30px rgba(0,230,118,0.35);
+}
+.card img{width:100%;border-radius:10px;margin-bottom:12px;}
+.card h3{font-size:1.4rem;color:var(--primary);margin-bottom:8px;}
+.card p{font-size:1rem;color:var(--text-dark);margin-bottom:12px;}
+.card a.btn{
+  display:block;text-align:center;background:var(--primary);
+  color:#000;padding:12px;border-radius:8px;font-weight:600;transition:0.3s;
+}
+.card a.btn:hover{filter:brightness(1.2);}
+
+/* ---------- TESTIMONIALS ---------- */
+.testimonials {position:relative;overflow:hidden;}
+.testimonial-card{
+  background:rgba(255,255,255,0.1);border-radius:12px;
+  padding:25px;margin:0 auto;text-align:center;max-width:600px;color:var(--text-dark);
+  animation:fadeUp 0.8s ease-out;
+}
+.testimonial-card p{font-size:1rem;color:var(--text-dark);margin-bottom:10px;}
+.testimonial-card h4{font-weight:600;color:var(--primary);}
+
+/* ---------- FAQ ---------- */
+.faq-item{margin-bottom:20px;border-bottom:1px solid #333;}
+.faq-question{
+  padding:16px;cursor:pointer;position:relative;
+  font-weight:600;color:var(--primary);
+}
+.faq-answer{padding:10px 16px;font-size:0.95rem;color:var(--text-dark);display:none;}
+
+/* ---------- FOOTER ---------- */
+footer{
+  background:rgba(0,0,0,0.85);padding:30px 0;text-align:center;color:#BBB;font-size:0.95rem;
+}
+
+/* ---------- KEYFRAMES ---------- */
+@keyframes fadeUp {
+  0% {opacity:0;transform:translateY(20px);}
+  100% {opacity:1;transform:translateY(0);}
+}
+
+</style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav>
+  <div class="container">
+    <div class="logo">BloxFruits<span style="font-weight:300;color:#FFF;">Store</span></div>
+    <div>
+      <span class="toggle-theme">🌙/☀️</span>
+      <span class="menu">
+        <a href="#miticas">Míticas</a>
+        <a href="#lendarias">Lendárias</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#depoimentos">Depoimentos</a>
+        <a href="#faq">FAQ</a>
+      </span>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO COM LOTTIE -->
+<section class="hero container">
+  <h1>As Melhores Frutas de Blox Fruits</h1>
+  <p>Compre diretamente via WhatsApp com atendimento premium!</p>
+  <a class="btn-primary" href="#miticas">Ver Frutas</a>
+
+  <lottie-player 
+    src="https://assets5.lottiefiles.com/packages/lf20_9izg4tlv.json"
+    background="transparent" speed="1"
+    style="width:300px;height:300px;margin-top:30px;"
+    loop autoplay>
+  </lottie-player>
+</section>
+
+<!-- FRUTAS MÍTICAS -->
+<section id="miticas" class="section container">
+  <div class="section-title">🔥 Frutas Míticas</div>
+  <div class="grid-cards">
+    <!-- Exemplo de card com imagem WebP -->
+    <div class="card">
+      <img src="https://cdn.pixabay.com/photo/2023/06/10/20/12/fruit-8053755_1280.png" alt="Dragon Fruit">
+      <h3>Dragon</h3><p>Poder devastador em combate.</p>
+      <a class="btn" href="https://wa.me/5599985068341?text=Olá,%20quero%20Dragon">Comprar</a>
+    </div>
+    <div class="card">
+      <img src="https://cdn.pixabay.com/photo/2017/01/12/14/42/fruit-1978700_1280.png" alt="Leopard Fruit">
+      <h3>Leopard</h3><p>Velocidade e agilidade impressionantes.</p>
+      <a class="btn" href="https://wa.me/5599985068341?text=Olá,%20quero%20Leopard">Comprar</a>
+    </div>
+    <!-- Repita os outros cards aqui com suas imagens -->
+  </div>
+</section>
+
+<!-- FRUTAS LENDÁRIAS -->
+<section id="lendarias" class="section container">
+  <div class="section-title">⚡ Frutas Lendárias</div>
+  <div class="grid-cards">
+    <div class="card">
+      <img src="https://cdn.pixabay.com/photo/2016/10/02/20/58/lava-1715146_1280.png" alt="Quake">
+      <h3>Quake</h3><p>Choque sísmico devastador.</p>
+      <a class="btn" href="https://wa.me/5599985068341?text=Olá,%20quero%20Quake">Comprar</a>
+    </div>
+    <!-- Repita os outros cards aqui -->
+  </div>
+</section>
+
+<!-- SERVIÇOS -->
+<section id="servicos" class="section container">
+  <div class="section-title">⚔️ Serviços</div>
+  <div class="grid-cards">
+    <div class="card"><h3>Up de Level</h3><p>Aumente seu level rapidamente.</p><a class="btn" href="https://wa.me/5599985068341?text=Olá,%20quero%20Up%20de%20Level">Solicitar</a></div>
+    <div class="card"><h3>Raids & Bosses</h3><p>Conquiste raids impossíveis!</p><a class="btn" href="https://wa.me/5599985068341?text=Olá,%20quero%20Raids">Solicitar</a></div>
+  </div>
+</section>
+
+<!-- DEPOIMENTOS -->
+<section id="depoimentos" class="section container">
+  <div class="section-title">💬 O que nossos clientes dizem</div>
+  <div class="testimonial-card">
+    <p>"Excelente atendimento e qualidade de serviço!"</p><h4>— Cliente Satisfeito</h4>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" class="section container">
+  <div class="section-title">❓ FAQ</div>
+  <div class="faq-item">
+    <div class="faq-question">Como faço a compra?</div>
+    <div class="faq-answer">Clique no botão “Comprar” e envie no WhatsApp.</div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  © 2026 • Blox Fruits Store • Todos os direitos reservados
+</footer>
+
+<script>
+// Dark/Light Toggle
+const toggle = document.querySelector('.toggle-theme');
+toggle.addEventListener('click', ()=> {
+  document.body.classList.toggle('light-mode');
+  if(document.body.classList.contains('light-mode')) {
+    document.body.style.background = 'var(--bg-light)';
+    document.body.style.color = 'var(--text-light)';
+  } else {
+    document.body.style.background = 'var(--bg-dark)';
+    document.body.style.color = 'var(--text-dark)';
+  }
+});
+
+// FAQ
+document.querySelectorAll('.faq-question').forEach(item =>{
+  item.addEventListener('click', ()=> {
+    const answer = item.nextElementSibling;
+    answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+  });
+});
+</script>
+
+</body>
+  </html>
+  
