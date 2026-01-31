@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blox Fruits Store • Profissional</title>
+<meta name="description" content="Venda de todas as frutas míticas e lendárias do Blox Fruits com atendimento via WhatsApp e serviços premium.">
+
+<!-- Fonte Premium -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<!-- Lottie -->
+<script src="https://unpkg.com/lottie-web/build/player/lottie.min.js"></script>
+
+<style>
+:root {
+  --bg-dark: #0F0F12;
+  --bg-light: #ffffff;
+  --text-dark: #EEE;
+  --text-light: #111;
+  --primary: #00e676;
+  --accent: #3f51b5;
+}
+
+/* RESET */
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;}
+html{scroll-behavior:smooth;}
+body{background:var(--bg-dark);color:var(--text-dark);transition:0.4s;}
+a{text-decoration:none;color:inherit;}
+
+/* NAVBAR */
+nav{position:fixed;top:0;left:0;right:0;background:rgba(0,0,0,0.85);backdrop-filter:blur(9px);padding:18px 24px;z-index:999;}
+nav .container{display:flex;justify-content:space-between;align-items:center;}
+nav .logo{font-size:1.9rem;font-weight:700;color:var(--primary);}
+nav .menu{display:flex;gap:20px;}
+nav .menu a{font-size:1rem;font-weight:500;color:var(--text-dark);transition:0.3s;}
+nav .menu a:hover{color:var(--primary);}
+nav .toggle-theme{cursor:pointer;font-size:1.2rem;margin-left:15px;}
+
+/* HERO */
+.hero{height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding-top:80px;}
+.hero h1{font-size:clamp(2.5rem,5vw,4rem);font-weight:700;color:var(--primary);}
+.hero p{margin-top:12px;font-size:1.2rem;color:var(--text-dark);}
+.hero .btn-primary{margin-top:30px;background:var(--primary);color:#000;padding:15px 32px;font-size:1.1rem;font-weight:600;border-radius:8px;transition:0.3s;}
+.hero .btn-primary:hover{transform:scale(1.05);filter:brightness(1.2);}
+
+/* SECTIONS */
+.container{max-width:1160px;margin:0 auto;padding:0 18px;}
+.section{padding:80px 0;}
+.section-title{font-size:2.4rem;text-align:center;color:var(--primary);margin-bottom:45px;}
+.grid-cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:22px;}
+
+/* CARD */
+.card{background:rgba(255,255,255,0.06);border-radius:14px;padding:22px;transition:0.5s;border:1px solid rgba(255,255,255,0.15);backdrop-filter:blur(6px);}
+.card:hover{transform:translateY(-7px) scale(1.03);box-shadow:0px 15px 30px rgba(0,230,118,0.35);}
+.card img{width:100%;border-radius:10px;margin-bottom:12px;}
+.card h3{font-size:1.4rem;color:var(--primary);margin-bottom:8px;}
+.card p{font-size:1rem;color:var(--text-dark);margin-bottom:12px;}
+.card a.btn{display:block;text-align:center;background:var(--primary);color:#000;padding:12px;border-radius:8px;font-weight:600;transition:0.3s;}
+.card a.btn:hover{filter:brightness(1.2);}
+
+/* TESTIMONIALS */
+.testimonials {position:relative;overflow:hidden;}
+.testimonial-card{background:rgba(255,255,255,0.1);border-radius:12px;padding:25px;margin:0 auto;text-align:center;max-width:600px;color:var(--text-dark);animation:fadeUp 0.8s ease-out;}
+.testimonial-card p{font-size:1rem;color:var(--text-dark);margin-bottom:10px;}
+.testimonial-card h4{font-weight:600;color:var(--primary);}
+
+/* FAQ */
+.faq-item{margin-bottom:20px;border-bottom:1px solid #333;}
+.faq-question{padding:16px;cursor:pointer;position:relative;font-weight:600;color:var(--primary);}
+.faq-answer{padding:10px 16px;font-size:0.95rem;color:var(--text-dark);display:none;}
+
+/* FOOTER */
+footer{background:rgba(0,0,0,0.85);padding:30px 0;text-align:center;color:#BBB;font-size:0.95rem;}
+
+/* KEYFRAMES */
+@keyframes fadeUp{0%{opacity:0;transform:translateY(20px);}100%{opacity:1;transform:translateY(0);}}
+</style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav>
+  <div class="container">
+    <div class="logo">BloxFruits<span style="font-weight:300;color:#FFF;">Store</span></div>
+    <div>
+      <span class="toggle-theme">🌙/☀️</span>
+      <span class="menu">
+        <a href="#miticas">Míticas</a>
+        <a href="#lendarias">Lendárias</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#como-comprar">Como Comprar</a>
+        <a href="#faq">FAQ</a>
+      </span>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero container">
+  <h1>As Melhores Frutas de Blox Fruits</h1>
+  <p>Compre direto pelo WhatsApp com atendimento premium!</p>
+  <a class="btn-primary" href="#miticas">Ver Frutas</a>
+  <lottie-player src="https://assets5.lottiefiles.com/packages/lf20_9izg4tlv.json" background="transparent" speed="1" style="width:300px;height:300px;margin-top:30px;" loop autoplay></lottie-player>
+</section>
+
+<!-- FRUTAS MÍTICAS -->
+<section id="miticas" class="section container">
+  <div class="section-title">🔥 Frutas Míticas</div>
+  <div class="grid-cards">
+    <div class="card"><img src="https://static.wikia.nocookie.net/blox-fruits/images/4/41/Dragon_Fruit_Icon.png" alt="Dragon"><h3>Dragon</h3><p>Poder devastador.</p><a class="btn" href="https://wa.me/5599985068341?text=Olá,%20quero%20Dragon">Comprar</a></div>
+    <div class="card"><img src="https://static.wikia.nocookie.net/blox-fruits/images/7/78/Leopard_Fruit_Icon.png" alt="Leopard"><h3>Leopard</h3><p>Velocidade e agilidade.</p><a class="btn" href="https://wa.me/5599985068341?text=Olá,%20quero%20Leopard">Comprar</a></div>
+    <div class="card"><img src="https://static.wikia.nocookie.net/blox-fruits/images/6/64/Spirit_Fruit_Icon.png" alt="Spirit"><h3>Spirit</h3><p>Poder espiritual.</p><a class="btn" href="https://wa.me/5599985068341?text=Olá,%20quero%20Spirit">Comprar</a></div>
+    <div class="card"><img src="https://static.wikia.nocookie.net/blox-fruits/images/c/cb/Control_Fruit_Icon.png" alt="Control"><h3>Control</h3><p>Poder estratégico.</p><a class="btn" href="https://wa.me/5599985068341?text=Olá,%20quero%20Control">Comprar</a></div>
+    <div class="card"><img src="https://static.wikia.nocookie.net/blox-fruits/images/e/e8/Shadow_Fruit_Icon.png" alt="Shadow"><h3>Shadow</h3><p>Manipulação das sombras.</p><a class="btn" href="https://wa.me/5599985068341?text=Olá,%20quero%20Shadow">Comprar</a></div>
+    <div class="card"><img src="https://static.wikia.nocookie.net/blox-fruits/images/1/1f/Venom_Fruit_Icon.png" alt="Venom"><h3>Venom</h3><p>Envenena adversários.</p><a class="btn" href="https://wa.me/5599985068341?text=Olá,%20quero%20Venom">Comprar</a></div>
+    <div class="card"><img src="https://static.wikia.nocookie.net/blox-fruits/images/d/d7/Dough_Fruit_Icon.png" alt="Dough"><h3>Dough</h3><p>Molde ataques únicos.</p><a class="btn" href="https://wa.me/5599985068341?text=Olá,%20quero%20Dough">Comprar</a></div>
+    <div class="card"><img src="https://static.wikia.nocookie.net/blox-fruits/images/f/fb/T-Rex_Fruit_Icon.png" alt="T-Rex"><h3>T-Rex</h3><p>Força bruta.</p><a class="btn" href="https://wa.me/5599985068341?text=Olá,%20quero%20T-Rex">Comprar</a></div>
+    <div class="card"><img src="https://static.wikia.nocookie.net/blox-fruits/images/b/b6/Mammoth_Fruit_Icon.png" alt="Mammoth"><h3>Mammoth</h3><p>Poder gigantesco.</p><a class="btn" href="https://wa.me/5599985068341?text=Olá,%20quero%20Mammoth">Comprar</a></div>
+    <div class="card"><img src="https://static.wikia.nocookie.net/blox-fruits/images/3/3b/Gravity_Fruit_Icon.png" alt="Gravity"><h3>Gravity</h3><p>Controle da gravidade.</p><a class="btn" href="https://wa.me/5599985068341?text=Olá,%20quero%20Gravity">Comprar</a></div>
+  </div>
+</section>
+
+<!-- FRUTAS LENDÁRIAS -->
+<section id="lendarias" class="section container">
+  <div class="section-title">⚡ Frutas Lendárias</div>
+  <div class="grid-cards">
+    <div class="card"><img src="https://static.wikia.nocookie.net/blox-fruits/images/0/01/Quake_Fruit_Icon.png" alt="Quake"><h3>Quake</h3><p>Choque sísmico devastador.</p><a class="btn" href="https://wa.me/5599985068341?text=Olá,%20quero%20Quake">Comprar</a></div>
+    <div class="card"><img src="https://static.wikia.nocookie.net/blox-fruits/images/8/86/Buddha_Fruit_Icon.png" alt="Buddha"><h3>Buddha</h3><p>Corpo gigantesco e forte.</p><a class="btn" href="https://wa.me/5599985068341?text=Olá,%20quero%20Buddha">Comprar</a></div>
+    <div class="card"><img src="https://static.wikia.nocookie.net/blox-fruits/images/1/1c/Phoenix_Fruit_Icon.png" alt="Phoenix"><h3>Phoenix</h3><p>Renascimento e fogo.</p><a class="btn" href="https://wa.me/5599985068341?text=Olá,%20quero%20Phoenix">Comprar</a></div>
+    <div class="card"><img src="https://static.wikia.nocookie.net/blox-fruits/images/3/30/Light_Fruit_Icon.png" alt="Light"><h3>Light</h3><p>Velocidade de luz.</p><a class="btn" href="https://wa.me/5599985068341?text=Olá,%20quero%20Light">Comprar</a></div>
+    <div class="card"><img src="https://static.wikia.nocookie.net/blox-fruits/images/d/d5/Flame_Fruit_Icon.png" alt="Flame"><h3>Flame</h3><p>Chamas intensas.</p><a class="btn" href="https://wa.me/5599985068341?text=Olá,%20quero%20Flame">Comprar</a></div>
+    <div class="card"><img src="https://static.wikia.nocookie.net/blox-fruits/images/9/9e/Ice_Fruit_Icon.png" alt="Ice"><h3>Ice</h3><p>Congela inimigos.</p><a class="btn" href="https://wa.me/5599985068341?text=Olá,%20quero%20Ice">Comprar</a></div>
+    <div class="card"><img src="https://static.wikia.nocookie.net/blox-fruits/images/f/fc/Dark_Fruit_Icon.png" alt="Dark"><h3>Dark</h3><p>Trevas e poder sombrio.</p><a class="btn" href="https://wa.me/5599985068341?text=Olá,%20quero%20Dark">Comprar</a></div>
+    <div class="card"><img src="https://static.wikia.nocookie.net/blox-fruits/images/5/50/Rumble_Fruit_Icon.png" alt="Rumble"><h3>Rumble</h3><p>Eletricidade intensa.</p><a class="btn" href="https://wa.me/5599985068341?text=Olá,%20quero%20Rumble">Comprar</a></div>
+  </div>
+</section>
+
+<!-- COMO EFETUAR A COMPRA -->
+<section id="como-comprar" class="section container">
+  <div class="section-title">🛒 Como efetuar a compra</div>
+  <div style="max-width:700px;margin:0 auto;font-size:1rem;color:#CCC;line-height:1.6;">
+    1️⃣ Escolha a fruta desejada clicando no botão “Comprar”.<br>
+    2️⃣ Você será direcionado ao WhatsApp com uma mensagem pronta.<br>
+    3️⃣ Confirme com nosso atendente o pagamento e a entrega.<br>
+    4️⃣ Receba sua fruta mítica ou lendária no jogo de forma segura e rápida.<br>
+    ✅ Pagamento seguro via transferência ou Pix.<br>
+    ✅ Suporte completo pelo WhatsApp.
+  </div>
+</section>
+
+<!-- SERVIÇOS -->
+<section id="servicos" class="section container">
+  <div class="section-title">⚔️ Serviços</div>
+  <div class="grid-cards">
+    <div class="card"><h3>Up de Level</h3><p>Aumente seu level rapidamente.</p><a class="btn" href="https://wa.me/5599985068341?text=Olá,%20quero%20Up%20de%20Level">Solicitar</a></div>
+    <div class="card"><h3>Raids & Bosses</h3><p>Conquiste raids impossíveis!</p><a class="btn" href="https://wa.me/5599985068341?text=Olá,%20quero%20Raids">Solicitar</a></div>
+  </div>
+</section>
+
+<!-- DEPOIMENTOS -->
+<section id="depoimentos" class="section container">
+  <div class="section-title">💬 O que nossos clientes dizem</div>
+  <div class="testimonial-card"><p>"Excelente atendimento e qualidade de serviço!"</p><h4>— Cliente Satisfeito</h4></div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" class="section container">
+  <div class="section-title">❓ FAQ</div>
+  <div class="faq-item"><div class="faq-question">Como faço a compra?</div><div class="faq-answer">Clique no botão “Comprar” e siga as instruções do WhatsApp.</div></div>
+  <div class="faq-item"><div class="faq-question">O serviço é seguro?</div><div class="faq-answer">Sim! Atendimento direto via WhatsApp e entrega garantida.</div></div>
+</section>
+
+<!-- FOOTER -->
+<footer>© 2026 • Blox Fruits Store • Todos os direitos reservados</footer>
+
+<script>
+// Dark/Light Toggle
+document.querySelector('.toggle-theme').addEventListener('click', ()=> {
+  document.body.classList.toggle('light-mode');
+  if(document.body.classList.contains('light-mode')){
+    document.body.style.background='var(--bg-light)';
+    document.body.style.color='var(--text-light)';
+  }else{
+    document.body.style.background='var(--bg-dark)';
+    document.body.style.color='var(--text-dark)';
+  }
+});
+
+// FAQ Acordeão
+document.querySelectorAll('.faq-question').forEach(item=>{
+  item.addEventListener('click', ()=>{
+    const answer = item.nextElementSibling;
+  
