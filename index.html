@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blox Fruits | Official Services</title>
+
+<style>
+:root{
+  --primary:#2563eb;
+  --bg:#f8fafc;
+  --text:#0f172a;
+  --muted:#64748b;
+  --border:#e5e7eb;
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: Inter, system-ui, Arial, sans-serif;
+}
+
+body{
+  background:var(--bg);
+  color:var(--text);
+}
+
+/* HEADER */
+header{
+  background:#fff;
+  border-bottom:1px solid var(--border);
+}
+
+.header{
+  max-width:1200px;
+  margin:auto;
+  padding:18px 24px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+
+.logo{
+  font-weight:800;
+  font-size:1.1rem;
+}
+
+nav a{
+  margin-left:22px;
+  text-decoration:none;
+  color:var(--muted);
+  font-weight:500;
+}
+
+/* HERO */
+.hero{
+  background:#fff;
+  padding:90px 24px;
+}
+
+.hero-content{
+  max-width:1200px;
+  margin:auto;
+}
+
+.hero h1{
+  font-size:clamp(2.4rem,5vw,3.2rem);
+  max-width:760px;
+}
+
+.hero p{
+  margin-top:18px;
+  max-width:620px;
+  font-size:1.1rem;
+  color:var(--muted);
+}
+
+.btn{
+  display:inline-block;
+  margin-top:28px;
+  padding:14px 30px;
+  background:var(--primary);
+  color:#fff;
+  border-radius:10px;
+  text-decoration:none;
+  font-weight:600;
+}
+
+/* SEÇÕES */
+.section{
+  padding:80px 24px;
+}
+
+.container{
+  max-width:1200px;
+  margin:auto;
+}
+
+.section h2{
+  font-size:2rem;
+  margin-bottom:32px;
+}
+
+/* GRID */
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:24px;
+}
+
+/* CARD */
+.card{
+  background:#fff;
+  padding:28px;
+  border-radius:16px;
+  border:1px solid var(--border);
+}
+
+.card h3{
+  font-size:1.15rem;
+  margin-bottom:10px;
+}
+
+.card p{
+  font-size:.95rem;
+  color:var(--muted);
+}
+
+/* CTA */
+.cta{
+  background:var(--primary);
+  color:#fff;
+  text-align:center;
+  padding:80px 24px;
+}
+
+.cta h2{
+  font-size:2.3rem;
+}
+
+.cta p{
+  margin-top:14px;
+  opacity:.9;
+}
+
+.cta .btn{
+  background:#fff;
+  color:var(--primary);
+  margin-top:26px;
+}
+
+/* FOOTER */
+footer{
+  background:#fff;
+  border-top:1px solid var(--border);
+  text-align:center;
+  padding:34px;
+  font-size:.9rem;
+  color:var(--muted);
+}
+
+/* MOBILE */
+@media(max-width:600px){
+  nav{display:none}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="header">
+    <div class="logo">Blox Fruits Services</div>
+    <nav>
+      <a href="#">Frutas</a>
+      <a href="#">Serviços</a>
+      <a href="#">Contato</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-content">
+    <h1>Venda profissional de frutas e serviços do Blox Fruits</h1>
+    <p>
+      Fornecemos <strong>todas as frutas do jogo</strong> e serviços completos,
+      com entrega combinada e atendimento direto pelo WhatsApp.
+    </p>
+    <a class="btn" href="https://wa.me/5599985068341" target="_blank">
+      Falar com atendimento
+    </a>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h2>🍏 Frutas do Jogo</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Todas as Frutas</h3>
+        <p>Disponibilizamos todas as frutas existentes no jogo.</p>
+      </div>
+      <div class="card">
+        <h3>Raridades</h3>
+        <p>Comuns, raras, lendárias e míticas.</p>
+      </div>
+      <div class="card">
+        <h3>Mais Procuradas</h3>
+        <p>Kitsune, Leopard, Dragon, Dough, Buddha e outras.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h2>⚔️ Serviços</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Up de Level</h3>
+        <p>Leveling rápido e eficiente.</p>
+      </div>
+      <div class="card">
+        <h3>Raids</h3>
+        <p>Todos os tipos de raids disponíveis.</p>
+      </div>
+      <div class="card">
+        <h3>Bounty & Honra</h3>
+        <p>Ajuda profissional para evolução.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta">
+  <h2>Pronto para comprar?</h2>
+  <p>Entre em contato agora e combine seu pedido.</p>
+  <a class="btn" href="https://wa.me/5599985068341" target="_blank">
+    Comprar agora
+  </a>
+</section>
+
+<footer>
+  © 2026 • Blox Fruits Services
+</footer>
+
+</body>
+</html>
