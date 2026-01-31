@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blox Fruits Store</title>
+<style>
+:root {
+  --primary: #00e676;
+  --bg: #0F0F12;
+  --text: #fff;
+  --card-bg: rgba(255,255,255,0.08);
+  --card-border: rgba(255,255,255,0.15);
+}
+
+/* RESET */
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Inter',sans-serif;}
+body{background:var(--bg);color:var(--text);overflow-x:hidden;font-size:14px;line-height:1.5;}
+a{text-decoration:none;color:inherit;}
+
+/* NAVBAR */
+nav{position:fixed;top:0;left:0;right:0;background:rgba(0,0,0,0.85);backdrop-filter:blur(6px);padding:12px 20px;z-index:999;}
+nav .container{display:flex;justify-content:space-between;align-items:center;}
+nav .logo{font-size:1.4rem;font-weight:700;color:var(--primary);}
+nav .menu{display:flex;gap:12px;font-size:0.9rem;}
+nav .menu a:hover{color:var(--primary);}
+
+/* HERO */
+.hero{height:90vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding-top:60px;}
+.hero h1{font-size:2rem;font-weight:700;color:var(--primary);}
+.hero p{margin-top:10px;font-size:1rem;color:#ddd;}
+.hero .btn-primary{margin-top:20px;background:linear-gradient(45deg,#ff6ec7,#3f51b5,#00e676,#ffea00);background-size:300% 300%;animation:btnGradient 5s ease infinite;color:#000;padding:10px 24px;font-size:0.95rem;font-weight:600;border-radius:6px;transition:0.3s;}
+.hero .btn-primary:hover{transform:scale(1.05);filter:brightness(1.2);}
+@keyframes btnGradient{0%{background-position:0% 50%;}50%{background-position:100% 50%;}100%{background-position:0% 50%;}}
+
+/* SECTIONS */
+.container{max-width:1000px;margin:0 auto;padding:0 15px;}
+.section{padding:60px 0;}
+.section-title{font-size:1.6rem;text-align:center;color:var(--primary);margin-bottom:30px;}
+.grid-cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:15px;}
+
+/* CARD */
+.card{background:var(--card-bg);border-radius:12px;padding:15px;transition:0.3s;border:1px solid var(--card-border);backdrop-filter:blur(6px);}
+.card:hover{transform:translateY(-4px) scale(1.02);box-shadow:0px 10px 20px rgba(0,230,118,0.3);}
+.card h3{font-size:1.1rem;color:var(--primary);margin-bottom:6px;}
+.card p{font-size:0.9rem;margin-bottom:10px;}
+.card a.btn{display:block;text-align:center;background:linear-gradient(45deg,#ff6ec7,#3f51b5,#00e676,#ffea00);background-size:300% 300%;animation:btnGradient 5s ease infinite;color:#000;padding:8px;border-radius:6px;font-weight:600;transition:0.3s;font-size:0.9rem;}
+.card a.btn:hover{filter:brightness(1.2);}
+
+/* TESTIMONIALS */
+.testimonial-card{background:var(--card-bg);border-radius:12px;padding:18px;margin:0 auto;text-align:center;max-width:300px;transition:0.3s;}
+.testimonial-card:hover{transform:translateY(-3px) scale(1.02);box-shadow:0 10px 20px rgba(0,230,118,0.3);}
+.testimonial-card p{font-size:0.9rem;margin-bottom:8px;line-height:1.4;color:#ddd;}
+.testimonial-card h4{font-weight:600;color:var(--primary);font-size:0.9rem;}
+
+/* FAQ */
+.faq-item{margin-bottom:12px;border-bottom:1px solid #333;}
+.faq-question{padding:10px;cursor:pointer;position:relative;font-weight:600;color:var(--primary);}
+.faq-answer{padding:6px 10px;font-size:0.85rem;display:none;color:#ddd;}
+
+/* FOOTER */
+footer{background:rgba(0,0,0,0.85);padding:20px 0;text-align:center;color:#BBB;font-size:0.85rem;}
+</style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav>
+  <div class="container">
+    <div class="logo">BloxFruits<span style="font-weight:300;color:#FFF;">Store</span></div>
+    <div class="menu">
+      <a href="#miticas">Míticas</a>
+      <a href="#lendarias">Lendárias</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#como-comprar">Como Comprar</a>
+      <a href="#depoimentos">Depoimentos</a>
+      <a href="#faq">FAQ</a>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero container">
+  <h1>Frutas Míticas & Lendárias de Blox Fruits</h1>
+  <p>Compre direto pelo WhatsApp com atendimento premium!</p>
+  <a class="btn-primary" href="#miticas">Ver Frutas Míticas</a>
+</section>
+
+<!-- FRUTAS MÍTICAS -->
+<section id="miticas" class="section container">
+  <div class="section-title">🔥 Frutas Míticas</div>
+  <div class="grid-cards">
+    <div class="card"><h3>Dragon</h3><p>Poder devastador.</p><a class="btn" href="https://wa.me/5599985068341?text=Olá,%20quero%20Dragon">Comprar</a></div>
+    <div class="card"><h3>Leopard</h3><p>Velocidade extrema.</p><a class="btn" href="https://wa.me/5599985068341?text=Olá,%20quero%20Leopard">Comprar</a></div>
+    <div class="card"><h3>Spirit</h3><p>Poder espiritual.</p><a class="btn" href="https://wa.me/5599985068341?text=Olá,%20quero%20Spirit">Comprar</a></div>
+    <div class="card"><h3>Control</h3><p>Poder estratégico.</p><a class="btn" href="https://wa.me/5599985068341?text=Olá,%20quero%20Control">Comprar</a></div>
+    <div class="card"><h3>Shadow</h3><p>Manipulação das sombras.</p><a class="btn" href="https://wa.me/5599985068341?text=Olá,%20quero%20Shadow">Comprar</a></div>
+    <div class="card"><h3>Venom</h3><p>Envenena adversários.</p><a class="btn" href="https://wa.me/5599985068341?text=Olá,%20quero%20Venom">Comprar</a></div>
+    <div class="card"><h3>Gravity</h3><p>Controle da gravidade.</p><a class="btn" href="https://wa.me/5599985068341?text=Olá,%20quero%20Gravity">Comprar</a></div>
+    <div class="card"><h3>Mammoth</h3><p>Força descomunal.</p><a class="btn" href="https://wa.me/5599985068341?text=Olá,%20quero%20Mammoth">Comprar</a></div>
+    <div class="card"><h3>T-Rex</h3><p>Poder pré-histórico.</p><a class="btn" href="https://wa.me/5599985068341?text=Olá,%20quero%20T-Rex">Comprar</a></div>
+    <div class="card"><h3>Dough</h3><p>Maleável e resistente.</p><a class="btn" href="https://wa.me/5599985068341?text=Olá,%20quero%20Dough">Comprar</a></div>
+    <div class="card"><h3>Kitsune</h3><p>Habilidade mística e ilusões.</p><a class="btn" href="https://wa.me/5599985068341?text=Olá,%20quero%20Kitsune">Comprar</a></div>
+  </div>
+</section>
+
+<!-- FRUTAS LENDÁRIAS -->
+<section id="lendarias" class="section container">
+  <div class="section-title">⚡ Frutas Lendárias</div>
+  <div class="grid-cards">
+    <div class="card"><h3>Quake</h3><p>Choque sísmico devastador.</p><a class="btn" href="https://wa.me/5599985068341?text=Olá,%20quero%20Quake">Comprar</a></div>
+    <div class="card"><h3>Buddha</h3><p>Corpo gigantesco e forte.</p><a class="btn" href="https://wa.me/5599985068341?text=Olá,%20quero%20Buddha">Comprar</a></div>
+    <div class="card"><h3>Phoenix</h3><p>Renascimento e fogo.</p><a class="btn" href="https://wa.me/5599985068341?text=Olá,%20quero%20Phoenix">Comprar</a></div>
+    <div class="card"><h3>Love</h3><p>Poder do coração.</p><a class="btn" href="https://wa.me/5599985068341?text=Olá,%20quero%20Love">Comprar</a></div>
+    <div class="card"><h3>Spider</h3><p>Habilidade de aranha, agilidade e teias.</p><a class="btn" href="https://wa.me/5599985068341?text=Olá,%20quero%20Spider">Comprar</a></div>
+    <div class="card"><h3>Sound</h3><p>Poder do som devastador.</p><a class="btn" href="https://wa.me/5599985068341?text=Olá,%20quero%20Sound">Comprar</a></div>
+    <div class="card"><h3>Portal</h3><p>Teletransporte entre locais.</p><a class="btn" href="https://wa.me/5599985068341?text=Olá,%20quero%20Portal">Comprar</a></div>
+    <div class="card"><h3>Rumble</h3><p>Poder sísmico concentrado.</p><a class="btn" href="https://wa.me/5599985068341?text=Olá,%20quero%20Rumble">Comprar</a></div>
+    <div class="card"><h3>Pain</h3><p>Inflige dor e danos contínuos.</p><a class="btn" href="https://wa.me/5599985068341?text=Olá,%20quero%20Pain">Comprar</a></div>
+    <div class="card"><h3>Blizzard</h3><p>Controle do gelo e frio extremo.</p><a class="btn" href="https://wa.me/5599985068341?text=Olá,%20quero%20Blizzard">Comprar</a></div>
+  </div>
+</section>
+
+<!-- SERVIÇOS -->
+<section id="servicos" class="section container">
+  <div class="section-title">⚔️ Serviços</div>
+  <div class="grid-cards">
+    <div class="card"><h3>Up de Level</h3><p>Suba rápido no jogo com nossa ajuda especializada.</p><a class="btn" href="https://wa.me/5599985068341?text=Olá,%20quero%20Up%20de%20Level">Solicitar</a></div>
+    <div class="card"><h3>Raids & Bosses</h3><p>Conquiste raids difíceis com nossa equipe.</p><a class="btn" href="https://wa.me/5599985068341?text=Olá,%20quero%20Raid">Solicitar</a></div>
+    <div class="card"><h3>Itens do Jogo</h3><p>Qualquer item do Blox Fruits disponível. Entre em contato via WhatsApp!</p><a class="btn" href="https://wa.me/5599985068341?text=Olá,%20quero%20Itens%20do%20Jogo">Solicitar</a></div>
+  </div>
+</section>
+
+<!-- COMO COMPRAR -->
+<section id="como-comprar" class="section container">
+  <div class="section-title">🛒 Como Comprar</div>
+  <div class="grid-cards" style="grid-template-columns:1fr;">
+    <div class="card"><h3>1. Escolha sua fruta ou serviço</h3><p>Role até a seção desejada e clique no botão do WhatsApp.</p></div>
+    <div class="card"><h3>2. Abra o WhatsApp</h3><p>O botão abrirá uma conversa automática com nossa equipe.</p></div>
+    <div class="card"><h3>3. Confirme seu pedido</h3><p>Envie a mensagem, confirme preço e disponibilidade.</p></div>
+    <div class="card"><h3>4. Receba sua fruta, serviço ou item</h3><p>Após confirmação, você receberá sua fruta, serviço ou item no jogo.</p></div>
+  </div>
+</section>
+
+<!-- DEPOIMENTOS -->
+<section id="depoimentos" class="section container">
+  <div class="section-title">💬 Depoimentos</div>
+  <div class="grid-cards">
+    <div class="testimonial-card"><p>"Comprei a Dragon, atendimento rápido e confiável!"</p><h4>Lucas M.</h4></div>
+    <div class="testimonial-card"><p>"Serviço de Up de Level excelente, recomendo!"</p><h4>Gabriela S.</h4></div>
+    <div class="testimonial-card"><p>"Leopard chegou rápido e sem problemas."</p><h4>Rafael T.</h4></div>
+    <div class="testimonial-card"><p>"Profissionalismo incrível! Atendimento via WhatsApp top."</p><h4>Mariana L.</h4></div>
+    <div class="testimonial-card"><p>"Consegui itens raros do jogo graças a eles!"</p><h4>Fernando K.</h4></div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" class="section container">
+  <div class="section-title">❓ FAQ</div>
+  <div class="faq-item">
+    <div class="faq-question">Como recebo minha fruta ou item?</div>
+    <div class="faq-answer">Após a confirmação pelo WhatsApp, a fruta ou item será entregue diretamente no jogo.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-question">Como funciona o pagamento?</div>
+    <div class="faq-answer">O pagamento é confirmado via WhatsApp antes do envio da fruta, serviço ou item.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-question">Posso solicitar serviços separados?</div>
+    <div class="faq-answer">Sim, cada serviço ou item possui seu próprio botão de solicitação.</div>
+  </div>
+</section>
+
+<footer>
+  © 2026 Blox Fruits Store • Todos os direitos reservados
+</footer>
+
+<script>
+// FAQ toggle
+document.querySelectorAll('.faq-question').forEach(item=>{
+  item.addEventListener('click', ()=>{
+    const answer = item.nextElementSibling;
+    answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+  });
+});
+</script>
+
+</body>
+  </html>
+  
