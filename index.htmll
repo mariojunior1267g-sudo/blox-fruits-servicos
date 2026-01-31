@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descubra o Segredo</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(120deg, #ffecd2, #fcb69f);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            color: #333;
+        }
+        header {
+            font-size: 2.5em;
+            font-weight: bold;
+            margin-bottom: 20px;
+            text-shadow: 1px 1px 5px #fff;
+        }
+        .container {
+            background: rgba(255,255,255,0.8);
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+        }
+        button {
+            margin: 10px;
+            padding: 15px 30px;
+            font-size: 1em;
+            border: none;
+            border-radius: 8px;
+            background-color: #ff7e5f;
+            color: #fff;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        button:hover {
+            background-color: #feb47b;
+        }
+        #resposta {
+            margin-top: 20px;
+            font-size: 1.2em;
+            font-weight: bold;
+            min-height: 1.5em;
+        }
+    </style>
+</head>
+<body>
+    <header>Descubra o Segredo!</header>
+    <div class="container">
+        <p>Escolha uma opção e veja o que acontece:</p>
+        <button onclick="acao(1)">Opção 1</button>
+        <button onclick="acao(2)">Opção 2</button>
+        <button onclick="acao(3)">Opção 3</button>
+        <div id="resposta"></div>
+    </div>
+
+    <script>
+        function acao(opcao) {
+            const mensagens = {
+                1: "Hmm... quase lá! 👀",
+                2: "Interessante escolha! 😏",
+                3: "Você está se aproximando! 🚀"
+            };
+            const surpresa = ["Algo secreto está se revelando...", "Continue explorando!", "Você quase descobriu!"];
+            const respostaDiv = document.getElementById("resposta");
+            
+            if(Math.random() > 0.5) {
+                respostaDiv.textContent = mensagens[opcao];
+            } else {
+                respostaDiv.textContent = surpresa[Math.floor(Math.random() * surpresa.length)];
+            }
+        }
+    </script>
+</body>
+</html>
